@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NORDIC DETAIL | Premium Car Care</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #090d12;
+  color: #fff;
+}
+
+header {
+  height: 85px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0c121a;
+  border-bottom: 1px solid #202a35;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.logo span {
+  color: #b7d8e8;
+}
+
+nav a {
+  color: #d3dce3;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #b7d8e8;
+}
+
+.hero {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background:
+    linear-gradient(90deg, rgba(5,10,15,.95), rgba(5,10,15,.5)),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=85') center/cover;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tag {
+  color: #b7d8e8;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+h1 span {
+  color: #b7d8e8;
+}
+
+.hero p {
+  color: #c3ccd4;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 35px;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 28px;
+  background: #b7d8e8;
+  color: #101820;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 13px;
+  border-radius: 3px;
+  transition: .2s;
+}
+
+.button:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 90px 10%;
+}
+
+.section-tag {
+  color: #b7d8e8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.intro {
+  color: #aab5bf;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 45px;
+}
+
+.services {
+  background: #101720;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: #17222d;
+  padding: 32px;
+  border: 1px solid #293846;
+  border-radius: 5px;
+}
+
+.card-number {
+  color: #b7d8e8;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.card p {
+  color: #aab5bf;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about p {
+  color: #aab5bf;
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.contact {
+  text-align: center;
+  background: #101720;
+}
+
+.contact p {
+  color: #aab5bf;
+  margin: 15px auto 30px;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+footer {
+  padding: 30px 10%;
+  text-align: center;
+  color: #82909c;
+  font-size: 12px;
+  border-top: 1px solid #202a35;
+}
+
+@media (max-width: 750px) {
+  header {
+    padding: 0 6%;
+    height: auto;
+    min-height: 75px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 15px;
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 550px;
+    padding: 70px 7%;
+  }
+
+  section {
+    padding: 70px 7%;
+  }
+
+  .cards,
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 31px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NORDIC<span> DETAIL.</span></div>
+  <nav>
+    <a href="#palvelut">Palvelut</a>
+    <a href="#meista">Meistä</a>
+    <a href="#yhteys">Yhteystiedot</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="tag">PREMIUM CAR CARE</div>
+    <h1>Autollesi<br><span>ansaitsema</span><br>huolenpito.</h1>
+    <p>
+      Enemmän kuin auton pesu. Huolellista autonhoitoa,
+      viimeisteltyä jälkeä ja puhdasta lopputulosta.
+    </p>
+    <a class="button" href="#yhteys">PYYDÄ TARJOUS</a>
+  </div>
+</div>
+
+<section class="services" id="palvelut">
+  <div class="section-tag">PALVELUMME</div>
+  <h2>Autonhoitoa ilman kompromisseja.</h2>
+  <p class="intro">
+    Jokainen auto ansaitsee huolellista käsittelyä.
+    Valitse tarpeisiisi sopiva palvelu.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-number">01 / PESU</div>
+      <h3>Premium-pesu</h3>
+      <p>Huolellinen ulkopesu, vanteiden puhdistus ja viimeistelty kuivaus.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">02 / SISÄTILAT</div>
+      <h3>Sisätilojen puhdistus</h3>
+      <p>Mattojen, pintojen ja sisätilojen perusteellinen puhdistus.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">03 / VIIMEISTELY</div>
+      <h3>Kiillotus</h3>
+      <p>Maalipinnan kiillotusta ja auton ulkonäön viimeistelyä.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="meista">
+  <div>
+    <div class="section-tag">NORDIC DETAIL</div>
+    <h2>Yksityiskohdat ratkaisevat.</h2>
+    <p>
+      Laadukas autonhoito näkyy jokaisessa yksityiskohdassa.
+      Tavoitteenamme on puhdas, huoliteltu ja näyttävä lopputulos.
+      Autosi ansaitsee parasta mahdollista huolenpitoa.
+    </p>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1000&q=85"
+    alt="Auton huolellinen puhdistus"
+  >
+</section>
+
+<section class="contact" id="yhteys">
+  <div class="section-tag">OTA YHTEYTTÄ</div>
+  <h2>Tehdään autostasi näyttävä.</h2>
+  <p>
+    Ota yhteyttä ja kysy lisää palveluistamme.
+    Suunnitellaan autollesi sopiva hoitokokonaisuus.
+  </p>
+  <a class="button" href="mailto:VAIHDA-OMA-SAHKOPOSTI">OTA YHTEYTTÄ</a>
+</section>
+
+<footer>
+  NORDIC DETAIL · PREMIUM CAR CARE
+  <br><br>
+  Portfolioesimerkki – kuvitteellinen yritys.
+</footer>
+
+</body>
+</html>
